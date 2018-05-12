@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Crafty Bastard Brewery</title>
+	<!-- <style>
+		 body {
+			
+			background-image: url('https://craftybastardbrewery.files.wordpress.com/2014/07/blackwhite-page-0012.jpg'); 
+			background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
+}
+		 } 
+	</style>  -->
+	<style>
+       #map {
+        height: 400px;
+        width: 100%;
+       }
+    </style>
+</head>
+<body>
+	<ul class="navigation">
+<li style="height:20%" data-menuanchor="home" class>
+<a href="index.html" class="navlink">Home</a>
+</li>
+<li style="height:20%" data-menuanchor="filme" class="active">
+<a href="/filme" class="navlink">Our Brews</a>
+</li>
+<li style="height:20%" data-menuanchor="about" class>
+<a href="/about" class="navlink">Merchandise</a>
+</li>
+<li style="height:20%" data-menuanchor="blog" class>
+<a href="/blog" class="navlink">Food Truck Schedule</a>
+</li>
+<li style="height:20%" data-menuanchor="kontakt" class>
+<a href="/kontakt" class="navlink">Crafty Bastard -West</a>
+</li>
+</ul>
+	<!-- <a href="about.html">About</a> -->
+	<div id="round_crafty">
+	<img src="crafty_logo_round.jpg" alt="round crafty logo">
+<!-- <style>
+	 .video{
+	 	height: 100%;
+	 	width: 100%;
+}
+}
+</style> -->
+
+<!-- Navigation Style -->
+	<style>
+
+
+
+
+
+	.navigation {
+		@include transform(translate3d(0px,0px,0));
+		@include transition(all, 300ms, ease-in, 500ms);
+		background-color: #822707;
+		height: 100%;
+		right: 0;
+		margin: 0;
+		padding: 0;
+		position: absolute;
+		top: 0;
+		vertical-align: middle;
+		width: 40px;
+		color: white;
+		opacity: 1;
+
+		li {
+			@include box-sizing();
+			display: block;
+			height: 23%;
+			margin: 0;
+			position: relative;
+			text-align: center;
+			width: 100%;
+
+			a {
+				@include font-size(11px, 14px, 400);
+				@include transform(rotate(-90deg) translate3d(-50%,-50%,0));
+				@include transition(opacity);
+				@include transformorigin(0px,0px);
+				color: $color-white;
+				opacity: 0.3;
+				font-family: $font-sans;
+				font-weight: 400;
+				left: 50%;
+				position: absolute;
+				text-align: center;
+				text-decoration: none;
+				text-transform: uppercase;
+				top: 50%;
+				transform-origin: 0% 0%;
+				vertical-align: middle;
+			}
+
+			&.active, &:hover {
+				a {
+					opacity: 1;
+				}
+			}
+
+			&.active {
+				pointer-events: none;
+				cursor: default;
+			}
+		}
+	}
+
+	.line {
+		@include transform(scale(1,0));
+		border-right: 2px solid $color-white;
+		height: 0px;
+		position: absolute;
+		left: 39px;
+		top: 0;
+		width: 0px;
+	}
+
+	.close {
+		@include transform(translate3d(-40px, 0px,0));
+		@include transition(all, 300ms, ease-in, 0ms);
+		background-color: rgba(17,17,17,1);
+		height: 100%;
+		position: absolute;
+		width: 40px;
+		z-index: 1000;
+
+		.iconclose {
+			@include transform(translate3d(-50%,-50%,0));
+			@include transition(all);
+			left: 50%;
+			opacity: 0.5;
+			position: absolute;
+			top: 50%;
+
+			&:before {
+				@include transformorigin(50%,50%);
+			}
+		}
+	}
+}
+}
+
+.page-open {
+	#menu {
+		.navigation {
+			@include transform(translate3d(-40px,0px,0));
+			@include transition(all, 300ms, ease-in, 0ms);
+		}
+
+		.line {
+			opacity: 0;
+		}
+
+		.close {
+			@include transform(translate3d(0px,0px,0));
+			@include transition(all, 300ms, ease-in, 0ms);
+
+			.iconclose {
+				&:before {
+					@include transition(all, 300ms, ease-in);
+				}
+			}
+
+			&:hover {
+				background-color: rgba(50,50,50,1);
+				@include transition(all, 300ms, ease-in, 0ms);
+				width: 60px;
+
+				.iconclose {
+					opacity: 1;
+
+					&:before {
+						@include transform(rotate(90deg));
+					}
+				}
+			}
+		}
+	}
+}
+
+</style>
+<!-- End Navigation Style -->
+<style>
+#round_crafty {
+height: 0%;
+width: 0%;
+background-color: white;
+background: rgba(0,0,0,0.0);
+  color: white;
+  padding: 1rem;
+  width: 33%;
+  margin:1rem;
+  float: left;
+  position: absolute;
+  top position: 80px;
+}
+body{
+	
+color: #822707;
+font-weight: ;
+}
+</style></div>
+  
+	<video autoplay muted loop id="my-video" class="video" autoplay="autoplay" loop="loop" muted="" width="100%" height="100%">
+  <source src="Beer_Bubbles_Close_Up.mov" type="video/mp4" />
+  <source src="Beer_Bubbles_Close_Up.ogv" type="video/ogg" />
+  <source src="Beer_Bubbles_Close_Up.webm" type="video/webm" /></video>
+
+	<!-- <div id="round_crafty"> -->
+	<!-- <img src="crafty_logo_round.jpg" alt="round crafty logo"> -->
+<style>
+	 .video{
+	 	/*height: 100%;
+	 	width: 100%;*/
+	 	opacity: .19;
+	 
+	 	background-repeat: repeat no-repeat;
+}
+
+</style>
+	
+<!-- <style>
+#round_crafty {
+height: 0%;
+width: 0%;
+background-color: white;
+position: absolute;
+top position: 80px;
+
+
+
+
+/*left: 10px;*/
+}
+</style> --></div>
+	<div class="container">
+	<div class="hours">
+		<h2>Hours:</h2>
+		<ui>Tuesday-Friday: 4:00pm-10:00pm</ui><br>
+		<ui>Saturday:2:00pm-12:00am</ui><br>
+		<ui>Sunday: 2:00pm-9:00pm</ui>
+	</h2>
+	
+	
+		<div>
+			<h2>CROWLERS ARE NOW AVAILABLE!</h2>
+		</div></div>
+	</div>
+		<style>
+	.hours	{
+    position: absolute;
+    right: 100px;
+    width: 400px;
+    /*border: 3px solid #73AD21;*/
+    padding: 0px;
+    top: 400px;
+}
+
+</style>
+<br>
+<div class="container">
+	<div class="location"><h2>Location</h2>
+
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2971.180501994311!2d-83.92459702000384!3d35.974229305713884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x885c17d21a8808e7%3A0x4932254400d11352!2sCrafty+Bastard+Brewery!5e0!3m2!1sen!2sus!4v1525348606828" width="400" height="300"  float= "left" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+	</div>
+	
+	<blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/BiM-deLHn-A/" data-instgrm-version="8" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50.0% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/BiM-deLHn-A/" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Crafty Bastard Brewery (@craftybastardbrewery)</a> on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2018-04-30T17:20:19+00:00">Apr 30, 2018 at 10:20am PDT</time></p></div></blockquote> <script async defer src="https://www.instagram.com/embed.js"></script>
+	
+	<style>
+	.location, .instagram-media, .try{
+float: right;
+width: 33%;
+}
+</style>
+<div class="try">Try a box
+<p>ERTRETERT sfskjdfhsdfrr wkrwbrkbrkjwrhwkjr fsjdhfksdhfkwew.s fwrwklwehtkjc ckjhwrwhefl rhwkr;hwjrlwr</p></div>
+	<!-- <script>
+      function initMap() {
+        var uluru = {lat: 35.9743497, lng: 83.9245174,17};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script> --></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,115 @@
+html,
+body,
+div,
+h1,
+p,
+a,
+video {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+.title {
+  color: white !important;
+  padding-top: 60%;
+  padding-left: 10%;
+  font-size: 60px;
+
+}
+
+/*body {
+  font-family: "Oxygen", sans-serif;
+}*/
+nav {
+  background-color: blue;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  padding: 2px;
+  margin: -15px;
+}
+.content {
+  position: relative;
+  top: 0%;
+  z-index: 2;
+  margin: 0px ;
+  max-width: 720px;
+  text-align: left;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  background-color: gray;
+}
+
+.video {
+  position: fixed;
+  top: 50%; left: 50%;
+  z-index: -1;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+}
+
+#my-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    z-index: -1;
+    background-size: cover;
+    
+}
+.content__heading {
+  margin-bottom: 24px;
+  color: rgb(39,39,39);
+  font-size: 44px;
+}
+
+.content__teaser {
+  margin-bottom: 24px;
+  color: rgb(89,89,89);
+  font-size: 22px;
+}
+
+.content__cta {
+  display: inline-block;
+  margin: 0;
+  padding: 12px 48px;
+  color: rgb(255,60,100);
+  font-size: 22px;
+  text-decoration: none;
+  border: solid 4px rgb(255,60,100);
+}
+
+
+.footer a{
+  color: white;
+  :hover ;
+  margin-left: -20px;
+
+}
+
+.footer {
+  
+    width:100%;
+    min-height:100px;
+    color: white;
+    font-size: 20px;
+    margin: 0px;
+    padding-bottom: 5px;
+    background-color: gray;
+    }    
+  /*  background-color: #222; */
+  /* This color gets inverted color or you can add navbar inverse class in html */
+
+
+  
